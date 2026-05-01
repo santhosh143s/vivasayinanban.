@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <title>விவசாயி நண்பன் AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 id="title">🌱 விவசாயி நண்பன் AI</h1>
+
+<!-- Language -->
+<select onchange="changeLang(this.value)">
+  <option value="ta">Tamil</option>
+  <option value="en">English</option>
+</select>
+
+<!-- Dark Mode -->
+<button onclick="toggleDarkMode()">🌙 Dark Mode</button>
+
+<!-- Voice -->
+<button onclick="startVoice()">🎤 பேசுங்கள்</button>
+<p id="voiceText"></p>
+
+<!-- Location -->
+<p id="location">Location loading...</p>
+
+<!-- Upload -->
+<p>படம் upload செய்யவும்</p>
+<input type="file" id="imageUpload" accept="image/*">
+<br><br>
+<img id="preview" width="250"/>
+
+<!-- Result -->
+<h2 id="result"></h2>
+
+<!-- Analytics -->
+<p id="visits"></p>
+
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
